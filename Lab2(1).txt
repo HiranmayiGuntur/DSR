@@ -1,0 +1,25 @@
+list.files()
+getwd()
+setwd("C:/Users/Hiranmayi Guntur/Downloads")
+getwd()
+grep(".csv",list.files(),value=T)
+sample_data=read.delim("bank-data.csv - bank-data.csv.csv",sep=",")
+usn=c("1BM17CS001","1BM17CS002","1BM17CS003")
+sample_data["usn"]=usn
+sample_data
+
+list.files()
+getwd()
+setwd("C:/Users/Hiranmayi Guntur/Documents")
+getwd()
+grep(".csv",list.files(),value=T)
+bank_data=read.csv("Bank.csv")
+bank_data
+head(bank_data)
+ncol(bank_data)
+summary(bank_data)
+ages=bank_data[,"age"]
+income=bank_data[,"income"]
+
+plot(ages,income)
+
