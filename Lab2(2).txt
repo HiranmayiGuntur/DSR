@@ -1,0 +1,16 @@
+M<-matrix(nrow=4,ncol=2,data = c(1,3,5,7,1,1,1,2),byrow = TRUE)
+M
+m1<-t(M)
+m1
+N<-matrix(nrow=3,ncol=3,data = c(2,1,1,3,2,1,2,1,2),byrow = TRUE)
+N
+m2<-eigen(N)
+m2
+m3=solve(N)
+m3
+crossprod(N)
+N[1,]
+N[1:2]
+N[,2:3]
+N[,2]
+
