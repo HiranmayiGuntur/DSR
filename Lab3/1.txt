@@ -1,0 +1,16 @@
+getwd()
+setwd("C:/Users/Hiranmayi Guntur/Desktop")
+grep(".csv",list.files(),value = T)
+mdata<-read.csv("Churn_Modelling.csv - Churn_Modelling.csv.csv")
+mdata
+head(mdata)
+summary(mdata)
+plot(mdata[,'Age'],mdata[,'NumOfProducts'])
+d<-read.delim("Churn_Modelling.csv - Churn_Modelling.csv.csv")
+d
+head(d)
+temp<-data.frame(City=c("Bangalore","Mumbai","Delhi","Pune","Chennai"))
+d<-cbind(d,new_col=temp)
+head(d)
+write.table(d,file = "C:/Users/Hiranmayi Guntur/DesktopChurn_Modelling.csv",sep="\t")
+
